@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Upload_image</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+
+            body{
+                background: url("img/white2.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-top: 300px;
+            }
+            form{
+                margin-left: 60px;
+                font-size: 30px;
+                text-align: center
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover{
+                color:brown;
+                text-decoration: none;
+            }
+            input{
+                font-size: 25px;
+                gap: 2px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="image_upload" method="post" enctype="multipart/form-data">
+            <h1>Upload_Image</h1>
+            <table>
+
+              <label name="categery" for="categery">Select categery</label><br>
+
+                <select name="categery" id="pictures">
+                    <option value="Nature">Nature</option>
+                    <option value="Sky">Sky</option>
+                    <option value="Montain">Mountain</option>
+                    <option value="Ocean">Ocean</option><br>
+                </select>
+<!--<label> helllo</label>
+                <input type="text" name="categery">-->
+                <br>
+                <input type="file" name="pic"  accept=".png,.jpg,.jpeg"><br>
+                <br>
+                <input type="submit" name="name"/>
+                <input type="reset" value="Reset"/>
+
+            </table>
+
+        </form>
+    </body>
+</html>
+
+
+   

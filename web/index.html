@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <style>
+        /* General Body Styling */
+        body {
+            background: url("img/white2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Centered container for navigation links */
+        .container {
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        /* Style for each link */
+        a {
+            display: block;
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+       
+
+        /* Hover effect for links */
+        a:active {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Optional styling for smaller screen sizes */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            a {
+                font-size: 1.2rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Centered container for the links -->
+    <div class="container">
+        <a href="upload.html">
+            <h1>Upload Image</h1>
+        </a>
+        <a href="show.html">
+            <h1>Name Wise</h1>
+        </a>
+        <a href="category.jsp">
+            <h1>All Images</h1>
+        </a>
+    </div>
+
+</body>
+
+</html>
